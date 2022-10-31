@@ -1,0 +1,448 @@
+@media screen and (max-width: 1350px) { 
+
+    nav {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .phone {
+        color: white;
+    }
+
+    .header, footer {
+        display: flex;
+        justify-content:center ;
+        gap: 30px;
+    }
+
+    .main {
+        grid-template-columns: 1fr 340px 1fr;
+        height: 476px;
+    }
+
+    .wrapperMain {
+        width: 300px;
+    }
+
+    .block1 {
+        width: 340px;
+        margin-top: 85px;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 23px;
+        line-height: 31px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 52px;
+    }
+
+    .button, .buttonTransparrent, .buttonOrange {
+        width: 338px;
+        height: 51px;
+    }
+
+    .buttonTransparrent {
+        margin-left: 0px;
+        margin-top: 26px;
+    }
+
+
+    .complFon {
+        height: 722px;
+        grid-template-columns: 1fr 340px 1fr;
+    }
+
+    .complWrapper {
+        display: grid;
+        grid-template-areas: 
+                "b "
+                "d "
+                "c ";
+        max-width: 340px;
+        background-color: #131313;
+        align-self: center;
+        margin-bottom: 0px;
+        margin-top: 0px; 
+        padding-top: 30px;
+    }
+
+    .CompletedProjects {
+        max-width: 338px;
+        height: 168px;
+        grid-column: 623px;
+        grid-area: b;
+        margin-bottom: 51px;
+        display: grid;
+        justify-items: center;
+    }
+
+    .CompletedProjects h2 {
+        font-size: 22px;
+        line-height: 30px;
+        max-width: 150px;
+        text-align: center;
+    }
+
+    .CompletedProjects p {
+        font-size: 11px;
+        line-height: 17px;
+        max-width: 311px;
+        text-align: center;
+    }
+
+    .information {
+        display: grid;
+        grid-area: c;
+        grid-template-columns: 1fr 1fr;
+        width: 338px;
+        height: 200px;
+    }
+
+
+
+    .slide {
+        max-width: 338px;
+        grid-area: d;
+        height: 242px;
+        margin-bottom: 36px;
+    }
+
+  
+
+    .information div p {
+        max-width: 99px;
+        font-size: 11px;
+        line-height: 135.84%;
+        margin-top: 11px;
+    }
+
+    .information div h2 {
+        font-size: 14px;
+    line-height: 138.6%;
+    }
+
+    .onlineControl {
+        margin-top: 0;
+        background-color: #131313;
+        width: 100%;
+    }
+
+    .onlineControl .buttonOrange {
+        order: 20;
+    }
+
+    iframe {
+        max-width: 338px;
+        height: 206px;
+    }
+
+    .onlineControl h1, .repair h1, .fieldThree h1, .contacts h1 {
+        font-size: 22px;
+        line-height: 138.6%;
+    }
+
+    .onlineControl p {
+        max-width: 340px;
+        font-size: 11px;
+        line-height: 169.8%;
+        color: white;
+        margin-bottom: 0;
+    }
+    
+
+    .field {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 35px 70px 35px 70px 70px;
+        align-items: end;
+    }
+
+    .field #name {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .field #phone {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    .field .buttonOrange {
+        grid-column: 1/2;
+        grid-row: 6/7;
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 27px;
+        margin-bottom: -20px;
+    }
+
+
+    .field .personal {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        justify-content: flex-start;
+    }
+    
+    .field input {
+        margin-right: 0;
+        height: 26px;
+        background-color: #131313;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+
+    .field label {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .personal p {
+        font-size: 14px;
+    }
+
+    .personal {
+        margin-top: -150px;
+        height: 50px;
+    }
+
+    ::placeholder {
+        color: white;
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .repairMain {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 8px 71px 0px 508px 508px 508px;
+        max-width: 340px;
+    }
+
+    .repairWrapper {
+        grid-template-columns: 1fr 350px 1fr;
+        margin-top: 50px;
+    }
+
+
+    .typeOne, .typeTwo, .typeThree {
+        margin-bottom: 30px;
+        justify-items: start;
+        height: auto;
+    }
+
+    .rep {
+        width: 235px;
+        height: 231px;
+        margin-top: -300px;
+        padding-top: 10px;
+        font-size: 13px;
+        line-height: 169.8%;
+    }
+
+    .rep h3 {
+        font-size: 15px;
+    }
+
+    .rep li {
+        line-height: 22px;
+    }
+
+    .list {
+        margin-top: 30px;
+        width: 190px;
+        height: 40px;
+        font-size: 15px;
+        margin-left: -35px;
+    }
+
+
+    .requestWrapper {
+        display: none;
+    }
+
+
+    .saveWrapper {
+        display: none;
+    }
+    
+    .fantasy ul {
+        display: none;
+    }
+
+    .wildImgLeft, .wildImgRight {
+        display: none;
+    }
+
+    .fantasyWrapper{
+        background-image: none;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .fantasyInner{
+        max-width: 320px;
+        display: grid;
+        grid-row: 66px 242px;
+        height: auto;
+        align-self: center;
+    }
+
+    .fantasy {
+        max-width: 338px;
+        margin-top: 55px;
+        display: grid;
+        justify-items: center;
+    }
+
+    .fantasy h1 {
+        margin-top: 0px; 
+        text-align: center;
+        margin-right: 0;
+        width: auto;
+        font-size: 22px;
+        line-height: 30px;
+        max-width: 250px;
+    }
+
+    .sliderFantasy {
+        display: grid;
+        height: 242px;
+        z-index: 2;
+    }
+
+    .itemMob {
+        display: grid;
+        height: 242px;
+        z-index: 2;
+        position: relative;
+        margin-bottom: 36px;
+    }
+
+ 
+
+    .itemMob .next {
+        right: 0px;
+        position: absolute;
+    }
+
+    .MobSlide {
+        max-width: 340px;
+    }
+
+    .item {
+        display: grid;
+        position: relative;
+        max-width: 320px;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        width: auto;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        align-self: center;
+    }
+
+    .next {
+        right: 0;
+    }
+
+
+    .repairNone {
+        display: none;
+    }
+
+    .otzyvy {
+        display: none;
+    }
+
+    .questionsWrapper {
+        width: 100%;
+        z-index: 1;
+        background-color: #131313;
+        background-image: none;
+        margin-top: -150px;
+        height: auto;
+    }
+
+    .fieldThree {
+        max-width: 338px;
+        padding-top: 200px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 0;
+    }
+
+    .fieldThree h1 {
+        margin-bottom: 50px;
+    }
+
+    .personal {
+        margin-top: 0px;
+        height: 50px;
+    }
+
+    #question, #nameQ {
+        width: 338px;
+    }
+
+    .fieldThree button {
+        align-self: center;
+        width: 338px;
+        height: 51px;
+    }
+
+    .contactsWrapperBlack {
+        background-image: none;
+        width: 100%;
+        height: auto;
+        background-color: #131313;
+    }
+
+
+    .contactsWrapper {
+        background: none;
+        height: auto;
+    }
+
+    .contacts {
+        margin-top: 0px;
+        order: 2;
+        margin-top: 30px;
+    }
+
+    .contacts h1 {
+        max-width: 310px;
+        font-size: 18px;
+        line-height: 138.6%;
+        margin-bottom: 30px;
+    }
+
+    .seti {
+        order: 3;
+    }
+
+    
+    footer {
+        display: none;
+    }
+
+
+}

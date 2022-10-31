@@ -1,0 +1,87 @@
+@media screen and (max-width: 1350px) { 
+    *{
+        margin: 0px; padding: 0px;
+    }
+ 
+    .header, footer {
+        display: flex;
+        justify-content:center ;
+        gap: 30px;
+    }
+
+    nav {
+    gap: 30px;
+    }
+    
+
+    .logo, .phone {
+        margin-right: 0;
+    }
+
+    .block1 {
+        margin-left: 194px;
+    }
+
+    .slide {
+        width: 658px;
+    }
+    
+    .proj {
+        width: 658px;
+    }
+
+    .complWrapper {
+        max-width: 1098px;
+    }
+    
+
+    .complFon {
+        display: grid;
+        grid-template-columns: 1fr 1098px 1fr;
+        justify-content: center;
+    }
+
+    .repairWrapper {
+         grid-template-columns: 1fr 1098px 1fr;
+     }
+
+     .typeOne, .typeTwo, .typeThree {
+        width: 350px;
+    }
+
+
+    .rep {
+        width: 290px;
+    }
+
+
+    .requestWrapper {
+        grid-template-columns: 1fr 1098px 1fr;
+    }
+
+    .request {
+        width: 1098px;
+    }
+
+    .save {
+        width: 998px;
+        margin-right: 100px;
+    }
+
+
+    .fantasyInner {
+        width: 1088px;
+    }
+
+    .otzyvy {
+        gap:4px;
+    }
+
+    .sliderFantasy {
+        display: none;
+    }
+
+    .itemMob {
+        display: none;
+    }
+}
