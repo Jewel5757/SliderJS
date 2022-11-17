@@ -64,9 +64,10 @@
     .complWrapper {
         display: grid;
         grid-template-areas: 
+                "a "
                 "b "
-                "d "
-                "c ";
+                "c "
+                "d ";
         max-width: 340px;
         background-color: #131313;
         align-self: center;
@@ -101,22 +102,28 @@
 
     .information {
         display: grid;
-        grid-area: c;
+        grid-area: d;
         grid-template-columns: 1fr 1fr;
         width: 338px;
         height: 200px;
     }
 
-
+    .slider__images {
+        position: relative;
+        width: 338px;
+        height: 241px;
+      }
 
     .slide {
-        max-width: 338px;
-        grid-area: d;
+        width: 338px;
+        grid-area: c;
         height: 242px;
         margin-bottom: 36px;
     }
 
-  
+  .proj {
+    display: none;
+  }
 
     .information div p {
         max-width: 99px;

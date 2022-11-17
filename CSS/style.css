@@ -101,23 +101,27 @@ body {
     background: rgb(255, 255, 255);
   }
 
+  .proj.active{
+    color: #E3B873;
+    text-decoration-line:underline;
+  }
 
   .proj {
     grid-area: b;
     display: flex;
-    justify-content: space-between;
+    width: 658px;
+    justify-content: space-around;
     max-width: 679px;
     margin-bottom: 45px;
-}
-
-.proj a{
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.3);
+    color: #777777;
+    cursor: pointer;
+    
 }
 
 
@@ -316,7 +320,7 @@ line-height: 27px;
     line-height: 21px;
 }
 
-.CompletedProjects h2, .proj{
+.CompletedProjects h2 {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;

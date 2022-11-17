@@ -35,7 +35,7 @@ let sliderImages = document.querySelector(".slider");
 initImages();
 
 
-
+//для фотографий
 function initImages() {
   images.forEach((image, index) => {
     let imageDiv = `<div class="image n${index} ${index === 0? "active" : ""}" style="background-image:url(${images[index].url});" data-index="${index}"></div>`;
@@ -59,6 +59,7 @@ function initAutoplay() {
     moveSlider(nextNumber);
   }, options.autoplayInterval);
 }
+initAutoplay()
 }
 
 let sliderOptions = {

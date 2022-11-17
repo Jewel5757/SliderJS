@@ -1,6 +1,6 @@
 let images = [{
   url: "/Users/Jewel/Desktop/Slider4maket/img/slide1.png",
-  ttitle: "Rostov-on-Don, Admiral",
+  title: "Rostov-on-Don, Admiral",
   description: "Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction  market we have made happy more than 1000 families",
   city: "Rostov-on-Don LCD admiral",
   repair: "3.5 months",
@@ -47,7 +47,7 @@ let sliderCity = document.querySelector(".city");
 let sliderArea = document.querySelector(".area");
 let sliderRepair = document.querySelector(".repairTime");
 let sliderCost = document.querySelector(".cost");
-let sliderHrefs = document.querySelector(".complWrapper");
+let sliderHrefs = document.querySelector(".proj");
 
 
 initImages();
@@ -62,11 +62,16 @@ if (options.titles) {
   initTitles();
 }
 
+if (options.city) {
+  initHrefs();
+}
+
 
 if (options.autoplay) {
   initAutoplay();
 }
 
+//функция для фотографий
 function initImages() {
   images.forEach((image, index) => {
     let imageDiv = `<div class="image n${index} ${index === 0? "active" : ""}" style="background-image:url(${images[index].url});" data-index="${index}"></div>`;
@@ -74,6 +79,7 @@ function initImages() {
   });
 }
 
+//функция для стрелочек
 function initArrows() {
   sliderArrows.querySelectorAll(".slider__arrow").forEach(arrow => {
     arrow.addEventListener("click", function() {
@@ -88,7 +94,7 @@ function initArrows() {
     });
   });
 }
-
+//функция для точек
 function initDots() {
   images.forEach((image, index) => {
     let dot = `<div class="slider__dots-item n${index} ${index === 0? "active" : ""}" data-index="${index}"></div>`;
@@ -101,7 +107,24 @@ function initDots() {
   })
 }
 
+//ФУНКЦИЯ ДЛЯ ССЫЛОК
 
+function initHrefs() {
+  images.forEach((image, index) => {
+    let href = `<div class="proj n${index} ${index === 0? "active" : ""}" data-index="${index}">${images[index].city}</div>`;
+    sliderHrefs.innerHTML += href;
+  });
+  sliderHrefs.querySelectorAll(".proj").forEach(href => {
+    href.addEventListener("click", function() {
+      moveSlider(this.dataset.index);
+    })
+  })
+}
+
+function initTitles() {
+  let titleDiv = `<div class="slider__images-title">${images[0].title}</div>`;
+  sliderImages.innerHTML += cropTitle(titleDiv, 50);
+}
 
 function moveSlider(num) {
   sliderImages.querySelector(".active").classList.remove("active");
@@ -110,34 +133,23 @@ function moveSlider(num) {
     sliderDots.querySelector(".active").classList.remove("active");
     sliderDots.querySelector(".n" + num).classList.add("active");
   }
+  if (options.city) {
+    sliderHrefs.querySelector(".active").classList.remove("active");
+    sliderHrefs.querySelector(".n" + num).classList.add("active");
+  }
   if (options.titles) changeTitle(num);
   if (options.description) changeDescription(num);
   if (options.city) changeCity(num);
   if (options.area) changeArea(num);
   if (options.repair) changeRepair(num);
   if (options.cost) changeCost(num);
-  if (options.hrefs) changeHrefs(num);
 }
-
-function initTitles() {
-  let titleDiv = `<div class="slider__images-title">${images[0].title}</div>`;
-  sliderImages.innerHTML += cropTitle(titleDiv, 50);
-}
-
 
 function changeTitle(num) {
   if (!images[num].title) return;
   let sliderTitle = sliderImages.querySelector(".slider__images-title");
   sliderTitle.innerText = cropTitle(images[num].title, 50);
 }
-
-function changeHrefs(num) {
- if (!images[num].title) return;
- let sliderHref = sliderHrefs.querySelector(".proj"); 
- sliderHref.innerText = images[num].title; 
-}
-
-
 
 function changeDescription(num) {
   if (!images[num].description) return;
